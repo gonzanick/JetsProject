@@ -6,5 +6,10 @@ public class JetsApplication {
 		
 
 	}
+	
+	public void menu() {
+		
+		
+	}
 
 }

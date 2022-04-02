@@ -1,1 +1,5 @@
-PassengerJet,Cessna 172,300,3000,10000000
+Passenger,Cessna 172,300,3000,10000000
+Fighter,A-10 "Warthog",439,2580,16000000
+Fighter,MiG-29,1500,890,1500000
+MilitaryCargo,C-130 Hercules,370,2050,75000000
+Passenger,Boeing 787,345,7000,100000000

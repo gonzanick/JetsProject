@@ -3,7 +3,7 @@ package com.skilldistillery.jets.entities;
 import java.util.Objects;
 
 public abstract class Jet {
-	private String name;
+	private String type;
 	private String model;
 	private double speed;
 	private int range;
@@ -11,20 +11,20 @@ public abstract class Jet {
 	
 	public Jet() { }
 	
-	public Jet(String name, String model, double speed, int range, long price) {
-		this.name = name;
+	public Jet(String type, String model, double speed, int range, long price) {
+		this.type = type;
 		this.model = model;
 		this.speed = speed;
 		this.range = range;
 		this.price = price;
 	}
 
-	public String getName() {
-		return name;
+	public String getType() {
+		return type;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setType(String name) {
+		this.type = name;
 	}
 
 	public String getModel() {
@@ -61,13 +61,13 @@ public abstract class Jet {
 
 	@Override
 	public String toString() {
-		return "Jet [name=" + name + ", model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price
-				+ "]";
+		return "Jet type is a " + type + ", model " + model + ", speed " + speed + ", range " + range + ", price " + price
+				;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(model, name, price, range, speed);
+		return Objects.hash(model, type, price, range, speed);
 	}
 
 	@Override
@@ -79,10 +79,14 @@ public abstract class Jet {
 		if (getClass() != obj.getClass())
 			return false;
 		Jet other = (Jet) obj;
-		return Objects.equals(model, other.model) && Objects.equals(name, other.name) && price == other.price
+		return Objects.equals(model, other.model) && Objects.equals(type, other.type) && price == other.price
 				&& range == other.range && Double.doubleToLongBits(speed) == Double.doubleToLongBits(other.speed);
 	}
 	
+	public void fly() {
+		
+		
+	}
 	
 	
 }

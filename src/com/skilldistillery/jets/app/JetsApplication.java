@@ -2,11 +2,14 @@ package com.skilldistillery.jets.app;
 
 import java.util.Scanner;
 
+import com.skilldistillery.jets.entities.AirField;
+
 public class JetsApplication {
 
 	public static void main(String[] args) {
 		JetsApplication jetApp = new JetsApplication();
 		Scanner sc = new Scanner(System.in);
+		AirField airFD = new AirField();
 		
 		while(true) {
 			System.out.println("Select what you would like to do");
@@ -14,6 +17,9 @@ public class JetsApplication {
 			int userInput = sc.nextInt();
 			
 			if (userInput == 1) {
+				airFD.readFleet();
+				airFD.listFleet();
+				System.out.println();
 				
 			}
 			
@@ -35,5 +41,13 @@ public class JetsApplication {
 		
 		
 	}
+	
+	public void flyAll() {
+		
+	}
+	
+//	public void listFleet() {
+//		
+//	}
 
 }

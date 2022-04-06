@@ -1,6 +1,6 @@
 package com.skilldistillery.jets.entities;
 
-public class Fighter extends Jet{
+public class Fighter extends Jet {
 	
 	public Fighter() { }
 	
@@ -10,6 +10,8 @@ public class Fighter extends Jet{
 	}
 	
 	public void fight() {
+		System.out.println("Initiating dogfight.");
+		System.out.println("America always wins!");
 		
 		
 	}
